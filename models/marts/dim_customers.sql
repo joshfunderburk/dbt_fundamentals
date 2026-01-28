@@ -1,10 +1,3 @@
-{{ 
-    config (
-        materialized = 'view'
-    ) 
-}}
-
-
 with customers as (
 
     select * from {{ ref('stg__jaffle_shop__customers')}}
