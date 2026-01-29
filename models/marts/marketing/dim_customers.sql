@@ -1,9 +1,9 @@
 WITH customers AS (
-    SELECT * FROM {{ ref ('stg__jaffle_shop__customers') }}
+    SELECT * FROM {{ ref ('stg_jaffle_shop__customers') }}
 ),
 
 orders AS (
-    SELECT * FROM {{ ref ('fct__orders') }}
+    SELECT * FROM {{ ref ('fct_orders') }}
 ),
 
 customer_orders AS (
